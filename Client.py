@@ -2,9 +2,9 @@ import socket
 import sys
 
 
-class Server:
+class Client:
     def __init__(self):
-        host = ''
+        host = 'localhost'
         port = 8888
 
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -30,4 +30,4 @@ class Server:
         s.close()
 
 if __name__ == '__main__':
-    Server()
+    Client()
